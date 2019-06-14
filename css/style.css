@@ -1,0 +1,248 @@
+@font-face{
+	font-family: DINPro-Regular;
+	src: url(../fonts/DINPro-Regular.otf);
+}
+@font-face{
+	font-family: DINPro-Bold;
+	src: url(../fonts/DINPro-Bold.otf);
+}
+body {
+	font-family: DINPro-Regular, sans-serif;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+h1 {
+	font-family: DINPro-Bold, sans-serif;
+	font-weight: bold; /* IE bag */
+}
+.row {
+	margin: 0 !important;
+}
+.yellow-btn {
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
+	background-color: #ffe400;
+	border-radius: 5px;
+	width: 220px;
+	cursor: pointer;
+}
+.yellow-btn:hover {
+	background-color: #f0d917;
+}
+
+/* header */
+.header {
+	padding: 15px 0;
+}
+.header .row {
+	display: flex;
+}
+.header [class^="col"] {
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+}
+.header p {
+	line-height: 16px;
+	margin: 0 10px;
+}
+.header .left p {
+	font-size: 12px;
+}
+.header h1 {
+	margin: 0;
+	padding: 0;
+}
+.header .tel {
+	font-family: DINPro-Bold, sans-serif;
+	font-weight: bold; /* IE bag */
+	font-size: 16px;
+}
+.header .slogan {
+	width: 170px;
+	font-size: 14px;
+}
+@media screen and (max-width: 991px) {
+	.header {
+		padding: 0;
+	}
+	.header .row {
+		display: block;
+	}
+	.header [class^="col"] {
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 500px) {
+	.header h1 {
+		font-size: 23px;
+	}
+	.header .left p {
+		line-height: 14px;
+	}
+	.header .slogan {
+		width: 100%;
+		padding: 5px 0;
+		text-align: center;
+	}
+	.header .right {
+		flex-wrap: wrap;
+	}
+}
+
+/* top-block */
+.top-block {
+	background-color: #fbfbfb;
+}
+.top-block .container {
+	padding: 50px 0 30px;
+}
+.top-block .think p {
+	max-width: 500px;
+}
+.top-block .blue-baloon {
+	color: white;
+	padding: 25px 35px 35px;
+	max-width: 390px;
+	font-size: 18px;
+	background: url('../img/blue-baloon.png') no-repeat;
+	background-size: 100%;
+}
+.top-block .pictures {
+	position: relative;
+}
+.top-block .mobile {
+	position: relative;
+	z-index: 1;
+	width: 200px;
+}
+.top-block .taxi {
+	position: absolute;
+	width: 320px;
+	top: 35%;
+	left: 160px;
+	animation: move 1s linear;
+}
+@keyframes move {
+	from { left: 20px }
+	to { left: 160px; }
+}
+@keyframes appear {
+	from { width: 0 }
+	to { width: 100px }
+}
+.top-block .like {
+	position: absolute;
+	top: 40px;
+	right: 100px;
+	width: 100px;
+	transition: .5s;
+	animation: appear 1s linear;
+}
+.top-block .like:hover {
+	transform: scale(1.2);
+	transition-timing-function: cubic-bezier(0.47, 2.02, .31, -.36);
+}
+.top-block .yellow-btn {
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+@media screen and (max-width: 1199px) {
+	.top-block .like,
+	.top-block .yellow-btn {
+		right: 10px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.top-block .container {
+		padding: 25px 0;
+	}
+	.top-block h1 {
+		text-align: center;
+	}
+	.top-block .think p,
+	.top-block .blue-baloon	{
+		margin: auto;
+	}
+}
+@media screen and (max-width: 500px) {
+	.top-block .yellow-btn {
+		position: static;
+		margin: 20px auto 0;
+	}
+	.top-block .like {
+		width: 60px;
+		top: 20px;
+	}
+	.top-block .mobile {
+		width: 60%;
+	}
+	.top-block .taxi {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 430px) {
+	.top-block .blue-baloon	{
+		padding: 15px;
+		font-size: 14px;
+		height: 110px;
+		text-align: center;
+	}
+}
+
+/* border top */
+.border-top {
+	width: 100%;
+}
+
+/* hello */
+.hello {
+	padding: 100px 0 0;
+}
+.hello .portret {
+	position: relative;
+}
+.hello .house {
+	width: 100px;
+	position: absolute;
+	left: 10px;
+	top: 60px;
+	transition: .5s;
+}
+.hello .house:hover {
+	transform: scale(1.2);
+	transition-timing-function: cubic-bezier(0.47, 2.02, .31, -.36);
+}
+.hello h1 {
+	line-height: 46px;
+}
+.hello .first-p {
+	font-size: 24px;
+}
+.hello .yellow-btn {
+	width: 270px;
+	margin-top: 30px;
+}
+@media screen and (max-width: 991px) {
+	.hello {
+		padding: 25px 0;
+	}
+	.hello .portret .img-responsive {
+		margin: 0 auto;
+	}
+	.hello h1 {
+		text-align: center;
+	}
+	.hello .yellow-btn	{
+		margin: auto;
+	}
+}
+@media screen and (max-width: 500px) {
+	.hello .house {
+		width: 60px;
+	}
+}
+
+
