@@ -252,7 +252,7 @@ h1 {
 	color: white;
 }
 .how-to-sell .container {
-	padding: 50px 0;
+	padding: 70px 0;
 }
 .how-to-sell h1 {
 	text-align: center;
@@ -281,12 +281,45 @@ h1 {
 	background: url('../img/yellow-baloon.png') no-repeat;
 	background-size: 100%;
 }
+.to-do {
+	display: flex;
+	margin-top: 15px !important;
+}
+.to-do [class^="col"] {
+	display: flex;
+}
+.to-do ul {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+}
+.to-do li {
+	position: relative;
+	margin: 20px 0;
+	padding-left: 15px;
+}
+.to-do li:before {
+	content: url('../img/small-v.png');
+	position: absolute;
+	left: -40px;
+}
+.to-do li.one-line:before {
+	top: -5px;
+}
 @media screen and (max-width: 1199px) {
 	.how-to-sell  .bad {
 		justify-content: center;
 	}
 	.how-to-sell .yellow-baloon {
 		margin: 15px auto;
+	}
+}
+@media screen and (max-width: 991px) {
+	.to-do {
+		display: block;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -316,5 +349,51 @@ h1 {
 	.how-to-sell .yellow-baloon	{
 		padding: 5px 10px;
 		height: 120px;
+	}
+}
+
+/* success */
+.success {
+	padding: 50px 0;
+}
+.success h1 {
+	text-align: center;
+}
+.success [class^="col"] {
+	padding: 15px 10px;
+}
+.success .sub-title-wrap {
+	display: flex;
+	align-items: center;
+}
+.success .sub-title {
+	font-size: 20px;
+	padding-left: 30px;
+	max-width: 300px;
+}
+.success .text {
+	padding: 20px 0 35px;
+	max-width: 480px;
+}
+.success .glavnoe-wrap {
+	text-align: center;
+}
+.success .glavnoe-wrap p {
+	margin: 0;
+}
+.success .glavnoe-wrap h1 {
+	margin: 0 0 25px 0;
+	padding: 0 10px;
+}
+.success .glavnoe {
+	font-size: 20px;
+	padding: 25px 10px;
+}
+.success .yellow-btn {
+	margin: 10px auto;
+}
+@media screen and (max-width: 991px) {
+	.success .text {
+		max-width: 100%;
 	}
 }
