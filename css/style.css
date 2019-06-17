@@ -94,6 +94,7 @@ h1 {
 /* top-block */
 .top-block {
 	background-color: #fbfbfb;
+	overflow-x: hidden;
 }
 .top-block .container {
 	padding: 50px 0 30px;
@@ -245,4 +246,75 @@ h1 {
 	}
 }
 
-
+/* how to sell */
+.how-to-sell {
+	background-color: #1cacf3;
+	color: white;
+}
+.how-to-sell .container {
+	padding: 50px 0;
+}
+.how-to-sell h1 {
+	text-align: center;
+}
+.how-to-sell .two-news {
+	text-align: center;
+	font-size: 19px;
+	margin-bottom: 30px;
+}
+.how-to-sell .bad,
+.how-to-sell .good {
+	padding: 10px 15px;
+}
+.how-to-sell  .bad {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+}
+.how-to-sell  .bad  p {
+	margin-right: 35px;
+}
+.how-to-sell .yellow-baloon {
+	color: black;
+	padding: 25px 35px 90px;
+	max-width: 450px;
+	background: url('../img/yellow-baloon.png') no-repeat;
+	background-size: 100%;
+}
+@media screen and (max-width: 1199px) {
+	.how-to-sell  .bad {
+		justify-content: center;
+	}
+	.how-to-sell .yellow-baloon {
+		margin: 15px auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.how-to-sell .container {
+		padding: 35px 0;
+	}
+	.how-to-sell h1,
+	.how-to-sell .two-news {
+		padding: 0 10px;
+	}
+	.how-to-sell .two-news {
+		margin-bottom: 0;
+	}
+	.how-to-sell  .bad  p:last-child {
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 430px) {
+	.how-to-sell .yellow-baloon	{
+		padding: 15px;
+		font-size: 14px;
+		height: 150px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 360px) {
+	.how-to-sell .yellow-baloon	{
+		padding: 5px 10px;
+		height: 120px;
+	}
+}
