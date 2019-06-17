@@ -377,17 +377,17 @@ h1 {
 }
 .success .glavnoe-wrap {
 	text-align: center;
+	padding: 10px;
 }
 .success .glavnoe-wrap p {
 	margin: 0;
 }
 .success .glavnoe-wrap h1 {
 	margin: 0 0 25px 0;
-	padding: 0 10px;
 }
 .success .glavnoe {
 	font-size: 20px;
-	padding: 25px 10px;
+	padding: 25px 0;
 }
 .success .yellow-btn {
 	margin: 10px auto;
@@ -395,5 +395,48 @@ h1 {
 @media screen and (max-width: 991px) {
 	.success .text {
 		max-width: 100%;
+	}
+}
+
+/* why we */
+.why-we {
+	display: flex;
+}
+.dollar-house {
+	background-color: #fcfcfc;
+	width: 47%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
+.why-we-text {
+	color: white;
+	background-color: #1cacf3;
+	width: 53%;
+	padding: 50px 80px;
+}
+.why-we-text p {
+	max-width: 440px;
+	margin-bottom: 25px;
+}
+.why-we-text .first-p {
+	font-size: 20px;
+}
+@media screen and (max-width: 991px) {
+	.why-we {
+		display: block;
+	}
+	.dollar-house,
+	.why-we-text {
+		width: 100%;
+	}
+	.why-we-text p {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.why-we-text {
+		padding: 20px;
 	}
 }
