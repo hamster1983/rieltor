@@ -13,6 +13,21 @@
 	</head>
 	<body>
 		
+		<!-- modal -->
+		<div class="modal-window">
+			<div class="modal-form">
+				<div class="close-btn"></div>
+				<h1>Оставьте заявку</h1>
+				<p>И наш менеджер свяжется с вами в течение дня</p>
+				<form action="" method="">
+					<input type="text" placeholder="Введите имя" /><br />
+					<input type="text" placeholder="Телефон" /><br />
+					<input type="checkbox" checked id="check" /><label for="check"></label> <span>Даю согласие на обработку персональных данных</span>
+					<button type="submit" class="yellow-btn modal-btn">Отправить заявку</button>
+				</form>
+			</div>
+		</div>
+		
 		<!-- header -->
 		<div class="container header">
 			<div class="row">
@@ -40,7 +55,7 @@
 						<br />
 						<p>Потому что появились посредники-платформы, соединяющие заказчика и исполнителя. Конечно, кто-то может и по старинке - воспользоваться ручным голосованием.</p>
 						<br />
-						<div class="blue-baloon">
+						<div class="blue-baloon wow jello" data-wow-delay="2s">
 							<p>Но, согласитесь, работать с помощью платформы - гораздо удобнее.</p>
 						</div>
 					</div>
@@ -55,14 +70,14 @@
 		</div>
 		
 		<!-- border top -->
-		<img src="img/border-top.jpg" alt="" class="border-top" />
+		<img src="img/border-top.jpg" alt="" class="border" />
 		
 		<!-- hello -->
 		<div class="container hello">
 			<div class="row">
 				<div class="col-md-6 portret">
-					<img src="img/house.png" alt="" class="house" />
-					<img src="img/olya.png" alt="" class="img-responsive" />
+					<img src="img/house.png" alt="" class="house wow flipInX" data-wow-offset="300" data-wow-duration="2s" />
+					<img src="img/olya.png" alt="" class="img-responsive wow fadeIn" data-wow-offset="300" data-wow-duration="2s" />
 				</div>
 				<div class="col-md-6 text">
 					<h1>Привет, меня зовут<br />
@@ -92,7 +107,7 @@
 						<p>Плохая новость - квартира сама себя не продаст.<br />Для продажи квартиры необходим четкий план действий.</p>
 					</div>
 					<div class="col-md-6 good">
-						<div class="yellow-baloon">
+						<div class="yellow-baloon wow jello" data-wow-offset="200">
 							<p>Хорошая новость - мы предоставляем опыт нашего агентства в ваше распоряжение.</p>
 						</div>
 					</div>
@@ -102,19 +117,19 @@
 				<div class="row to-do">
 					<div class="col-md-6">
 						<ul>
-							<li class="one-line">Рыночную оценку квартиры;
-							<li class="one-line">Составим маркетинговый план продажи;
-							<li>"Продающее" описание вашей собственности<br />для всех популярных и специальных платформ;
-							<li class="one-line">Оповестим всех агентов города;
-							<li>Оповестим жителей вашего микрорайона<br />о продаже вашей квартиры;
+							<li class="one-line wow fadeInDown" data-wow-delay=".5s">Рыночную оценку квартиры;
+							<li class="one-line wow fadeInDown" data-wow-delay=".5s">Составим маркетинговый план продажи;
+							<li class="wow fadeInDown" data-wow-delay=".5s">"Продающее" описание вашей собственности<br />для всех популярных и специальных платформ;
+							<li class="one-line wow fadeInDown" data-wow-delay=".5s">Оповестим всех агентов города;
+							<li class="wow fadeInDown" data-wow-delay=".5s">Оповестим жителей вашего микрорайона<br />о продаже вашей квартиры;
 						</ul>
 					</div>
 					<div class="col-md-6">
 						<ul>					
-							<li>Проведем рекламную кампанию, включая, но не ограничиваясь, продвижением на ключевых интернет-площадках); 
-							<li>Сконцентрируем квалифицироавнных покупателей на покупку именно вашей квартиры (так, чтобы они за нее боролись);
-							<li>Возьмем на себя общение с потенциальными покупателями, сделав это так, чтобы из множества вариантов они выбрали именно вашу квартиру.
-							<li class="one-line">Будем искать покупателей Ежедневно!
+							<li class="wow fadeInDown" data-wow-delay=".5s">Проведем рекламную кампанию, включая, но не ограничиваясь, продвижением на ключевых интернет-площадках); 
+							<li class="wow fadeInDown" data-wow-delay=".5s">Сконцентрируем квалифицироавнных покупателей на покупку именно вашей квартиры (так, чтобы они за нее боролись);
+							<li class="wow fadeInDown" data-wow-delay=".5s">Возьмем на себя общение с потенциальными покупателями, сделав это так, чтобы из множества вариантов они выбрали именно вашу квартиру.
+							<li class="one-line wow fadeInDown" data-wow-delay=".5s">Будем искать покупателей Ежедневно!
 						</ul>
 					</div>
 				</div>
@@ -126,14 +141,14 @@
 			<h1>Как продать успешно:</h1>
 			<br />
 			<div class="row steps">
-				<div class="col-md-6">
+				<div class="col-md-6 wow bounceInLeft" data-wow-duration="2s" data-wow-offset="200">
 					<div class="sub-title-wrap">
 						<p><img src="img/big-v.png" alt="" /></p>
 						<p class="sub-title">Правильно оценить квартиру</p>
 					</div>
 					<p class="text">Нередко собственники завышают стоимость квартиры в расчете на будущий торг с покупателем. По факту же завышенная стоимость отпугивает потенциальных покупателей на самых начальных этапах. В результате - ни звонков, ни просмотров. А время идет и идет…</p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 wow bounceInRight" data-wow-duration="2s" data-wow-offset="200">
 					<div class="sub-title-wrap">
 						<p><img src="img/big-v.png" alt="" /></p>
 						<p class="sub-title">Наладить коммуникацию с покупателями</p>
@@ -142,14 +157,14 @@
 				</div>
 			</div>
 			<div class="row steps">
-				<div class="col-md-6">
+				<div class="col-md-6 wow bounceInUp" data-wow-duration="2s" data-wow-offset="200">
 					<div class="sub-title-wrap">
 						<p><img src="img/big-v.png" alt="" /></p>
 						<p class="sub-title">Провести предпродажную подготовку квартиры</p>
 					</div>
 					<p class="text">Нередко бывают случаи, когда сделка срывается из-за каких-то мелочей: неприятный запах в квартире, трещина в полу, жирное пятно на обоях, долг по коммуналке (7 тысяч рублей). Покупатели любят опрятность и не любят долги. Странные они - покупатели) Мы сделаем правильную презентацию и представление квартиры, акцентировав ее преимущества и достоинства.</p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 wow bounceInDown" data-wow-duration="2s" data-wow-offset="200">
 					<div class="sub-title-wrap">
 						<p><img src="img/big-v.png" alt="" /></p>
 						<p class="sub-title">Иметь наготове полный пакет документов</p>
@@ -157,7 +172,7 @@
 					<p class="text">Для покупателей очень важна юридическая чистота сделки. Свидетельство о регистрации права собственности, Договор купли-продажи, кадастровый план - их наличие под рукой может сыграть решающую роль в принятии решения покупателем</p>
 				</div>
 			</div>
-			<div class="glavnoe-wrap">
+			<div class="glavnoe-wrap wow fadeIn" data-wow-duration="2s" data-wow-offset="200">
 				<img src="img/star.png" alt="" />
 				<p class="glavnoe">Ну и самое главное:</p>
 				<h1>Грамотная стратегия<br />продвижения и техники продаж!</h1>
@@ -170,7 +185,7 @@
 		<!-- why we -->
 		<div class="why-we">
 			<div class="dollar-house">
-				<p><img src="img/dollar-house.png" alt="" class="img-responsive" /></p>
+				<p><img src="img/dollar-house.png" alt="" class="img-responsive wow flipInY" data-wow-offset="300" /></p>
 			</div>
 			<div class="why-we-text">
 				<h1>Почему мы?</h1>
@@ -180,6 +195,85 @@
 				<p>В своей работе мы используем методики и техники продаж ведущих признанных экспертов в области брокериджа. Как российских, так и международных.</p>
 				<p>Мы постоянно участвуем в семинарах и курсах повышения квалификации риэлторов.</p>
 				<p>Мы владеем и применяем на практике все самые современные техники продаж, от аукциона до  стратегии переговоров.</p>
+			</div>
+		</div>
+		
+		<!-- border middle -->
+		<img src="img/border-middle.jpg" alt="" class="border" />
+		
+		<!-- comments -->
+		<div class="comments">
+			<h1>Послушайте, что говорят<br />наши клиенты</h1>
+			<br />
+			<div class="container">
+				<div class="comment-item wow flipInX">
+					<div class="ava">
+						<p><img src="img/kudrina.jpg" alt="" /></p>
+						<p class="name">
+							<span>Елена Кудрина</span><br />
+							Санкт-Петербург
+						</p>
+					</div>
+					<p class="comment-text">Сначала думала, что продавать квартиру - это будет долго и муторно. Но в итоге Ольга смогла найти покупателя всего за неделю. За желаемую цену. Теперь продавать буду только через Ольгу.</p>
+					<div class="all"><span class="more-less">Читать полностью</span> <span class="glyphicon glyphicon-chevron-down"></span></div>
+				</div>
+				<div class="comment-item wow flipInX" data-wow-delay=".2s">
+					<div class="ava">
+						<p><img src="img/karakhanov.jpg" alt="" /></p>
+						<p class="name">
+							<span>Эльдар Караханов</span><br />
+							Санкт-Петербург
+						</p>
+					</div>
+					<p class="comment-text">Продавали квартиру в центре больше года. Потом стали сотрудничать с Ольгой. Ольга организовала продвижение не только в интернете, но и распространив рекламу в нашем районе и по соседним домам. Запустила продажи по системе аукциона. В итоге за два дня квартиру посмотрели 30 человек. Один из них и стал в итоге покупателем. Спасибо!</p>
+					<div class="all"><span class="more-less">Читать полностью</span> <span class="glyphicon glyphicon-chevron-down"></span></div>
+				</div>
+				<div class="comment-item wow flipInX" data-wow-delay=".4s">
+					<div class="ava">
+						<p><img src="img/kuznetsova.jpg" alt="" /></p>
+						<p class="name">
+							<span>Анна Кузнецова</span><br />
+							Санкт-Петербург
+						</p>
+					</div>
+					<p class="comment-text">Наша квартира была оформлена в собственность на ребенка. Что осложняло процесс продажи. Многих смущало, что сделку надо согласовывать в органах опеки Но Ольга отработала по всем каналам: договорилась с управляющей компанией, оповестила соседей, запустила рекламу в интернете. Убедила всех, что нет ничего страшного в согласительных  процедурах. В итоге - после долгих переговоров - один из соседей и стал покупателем. Я довольна. </p>
+					<div class="all"><span class="more-less">Читать полностью</span> <span class="glyphicon glyphicon-chevron-down"></span></div>
+				</div>
+				<div class="comment-item wow flipInX" data-wow-delay=".6s">
+					<div class="ava">
+						<p><img src="img/glazkov.jpg" alt="" /></p>
+						<p class="name">
+							<span>Владимир Глазков</span><br />
+							Санкт-Петербург
+						</p>
+					</div>
+					<p class="comment-text">Ожидали пополнения в семье. И надо было расширяться. Начали продавать свою прежнюю квартиру. Сначала пытались продавать квартиру сами. Потом согласились на услуги пяти  агентств. Все выставляли объявления по разным ценам. В итоге за полгода - не смогли найти ни одного реального покупателя. После чего стали сотрудничать с Ольгой. Все прочие объявления сняли. Ольга в короткий срок смогла сконцентрировать спрос на квартире по желаемой цене.  В результате - нашли покупателя за две недели. А сами переехали в более просторную квартиру, успев к рождению второго ребенка. Спасибо Ольге за оперативные продажи.</p>
+					<div class="all"><span class="more-less">Читать полностью</span> <span class="glyphicon glyphicon-chevron-down"></span></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- border bottom -->
+		<img src="img/border-bottom.jpg" alt="" class="border" />
+		
+		<!-- together -->
+		<div class="together">
+			<h1>Работаем вместе?</h1>
+			<p class="first-p">Тогда жмите и мы начинаем сотрудничество!</p>
+			<div class="yellow-btn">Продать квартиру</div>
+		</div>
+		
+		<!-- footer -->
+		<div class="container footer">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 left">
+					<h1>ОК Property</h1>
+					<p>Помощь в продаже недвижимости</p>
+				</div>
+				<div class="col-lg-4 col-lg-offset-4 col-md-6 col-sm-6 right">
+					<p><img src="img/bottom-house.png" alt="" /></p>
+					<p>Превращаем квадратные<br />метры в круглые суммы</p>
+				</div>
 			</div>
 		</div>
 		

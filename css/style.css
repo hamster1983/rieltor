@@ -18,6 +18,9 @@ h1 {
 .row {
 	margin: 0 !important;
 }
+.wow {
+	visibility: hidden;
+}
 .yellow-btn {
 	font-weight: bold;
 	text-align: center;
@@ -29,6 +32,107 @@ h1 {
 }
 .yellow-btn:hover {
 	background-color: #f0d917;
+}
+.modal-window {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background-color: #1cacf3;
+	z-index: 2;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.modal-form {
+	width: 290px;
+	padding: 35px;
+	background-color: white;
+	border-radius: 5px;
+	position: relative;
+}
+.modal-form .close-btn {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -60px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
+.modal-form .close-btn:before,
+.modal-form .close-btn:after {
+	content: '|';
+	display: block;
+	position: absolute;
+	top: -8px;
+}
+.modal-form .close-btn:before {
+	transform: rotate(45deg);
+	left: 10px;
+}
+.modal-form .close-btn:after {
+	transform: rotate(-45deg);
+	left: 8px;
+}
+.modal-form h1 {
+	margin: 0 0 15px;
+}
+.modal-form p {
+	font-size: 14px;
+}
+.modal-form [type="text"] {
+	border-radius: 3px;
+	margin: 10px 0;
+	box-shadow: 0 0 1px silver;
+	border: none;
+	width: 100%;
+	padding: 12.5px 0 15px 15px;
+	font-family: DINPro-Bold, sans-serif;
+}
+#check {
+	display: none;
+}
+.modal-form label[for="check"] {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	background-color: #ffe400;
+	position: relative;
+	top: 7px;
+	margin-right: 7px;
+	cursor: pointer;
+}
+.modal-form label[for="check"]:before {
+	content: '';
+	display: none;
+	width: 9px;
+	height: 6px;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+	border-radius: 2px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 4px;
+	left: 3px;
+}
+#check:checked ~ label[for="check"]:before {
+	display: block;
+}
+#check:checked ~ .yellow-btn {
+	visibility: visible;
+}
+.modal-form span {
+	font-size: 14px;
+}
+.modal-form .yellow-btn {
+	border: none;
+	margin: 20px auto 0;
+	width: 100%;
+	visibility: hidden;
 }
 
 /* header */
@@ -193,8 +297,8 @@ h1 {
 	}
 }
 
-/* border top */
-.border-top {
+/* border */
+.border {
 	width: 100%;
 }
 
@@ -372,7 +476,7 @@ h1 {
 	max-width: 300px;
 }
 .success .text {
-	padding: 20px 0 35px;
+	padding: 20px 5px 35px;
 	max-width: 480px;
 }
 .success .glavnoe-wrap {
@@ -438,5 +542,133 @@ h1 {
 @media screen and (max-width: 600px) {
 	.why-we-text {
 		padding: 20px;
+	}
+}
+
+/* comments */
+.comments {
+	background-color: #fbfbfb;
+	padding: 40px 0 50px;
+}
+.comments .container {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.comments h1 {
+	text-align: center;
+}
+.comments .comment-item {
+	background-color: white;
+	border-radius: 5px;
+	width: 30%;
+	margin: 1.667%;
+	padding: 35px 35px 15px;
+	box-shadow: 0 0 1px silver;
+}
+.comments .ava {
+	display: flex;
+	align-items: center;
+}
+.comments .ava img {
+	width: 80px;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.comments .name span {
+	font-weight: bold;
+	font-size: 18px;
+}
+.comments .comment-text {
+	line-height: 24px;
+	margin-top: 20px;
+	max-height: 100px;
+	height: auto;
+	overflow: hidden;
+	transition: .3s;
+}
+.comments .comment-text.more-text {
+	max-height: 100%;
+	height: auto;
+}
+.comments .all {
+	color: #00a0f1;
+	cursor: pointer;
+	font-weight: bold;
+}
+.comments .all .glyphicon {
+	position: relative;
+	top: 3px;
+	left: 2px;
+	transition: .3s;
+}
+.comments .all .glyphicon.rotate {
+	transform: rotate(180deg);
+	top: 1px;
+}
+@media screen and (max-width: 1199px) {
+	.comments .comment-item {
+		width: 47%;
+		margin: 1.5%;
+	}
+}
+@media screen and (max-width: 991px) {
+	.comments .container {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.comments .comment-item {
+		width: 100%;
+		margin: 1.5%;
+	}
+}
+
+/* together */
+.together {
+	padding: 35px 10px 60px;
+	text-align: center;
+	color: white;
+	background-color: #1cacf3;
+}
+.together .first-p {
+	font-size: 20px;
+	margin: 30px 0 40px;
+}
+.together .yellow-btn {
+	color: black;
+	margin: 10px auto;
+}
+
+/* footer */
+.footer {
+	padding: 35px 0 25px;
+}
+.footer [class^="col"] {
+	padding: 10px;
+}
+.footer h1 {
+	margin-top: 0;
+}
+.footer .left p {
+	font-size: 13px;
+}
+.footer .right {
+	display: flex;
+	align-items: center;
+}
+.footer .right p {
+	margin: 0 10px;
+	font-size: 22px;
+}
+@media screen and (max-width: 991px) {
+	.footer .left {
+		text-align: center;
+	}
+	.footer .right {
+		justify-content: center;
+	}
+	.footer .right p {
+		font-size: 16px;
 	}
 }
